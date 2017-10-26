@@ -26,7 +26,7 @@ const people = [
 urls = []
 
 // For all people,
-for (let i = 0; i < people.length; i++) {
+for (let j = 0; j < people.length; j++) {
 
   // get the current person,
 
