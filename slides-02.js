@@ -1,16 +1,21 @@
-let cities = [
+const cities = [
   'Sand Point',
   'Yukon'
 ]
 
 // We want to turn them into urls, like so:
-// const urls = [
+// [
 //   'https://example.com/city/sand-point',
 //   'https://example.com/city/yukon'
 // ]
 
-// For each city,
+let urls = []
+
+// For all cities,
 for (let i = 0; i < cities.length; i++) {
+
+  // get the current city,
+
 
   // lowercase,
 
@@ -18,7 +23,10 @@ for (let i = 0; i < cities.length; i++) {
   // replace spaces with hyphens,
 
 
-  // and add the url part.
+  // add the url part,
+
+
+  // and add to the urls array.
 
 
 }

@@ -18,15 +18,15 @@ for (let i = 0; i < cities.length; i++) {
   let city = cities[i]
 
   // lowercase,
-
+  city = city.toLowerCase()
 
   // replace spaces with hyphens,
-
+  city = city.replace(' ', '-')
 
   // add the url part,
-
+  city = 'https://example.com/city/' + city
 
   // and add to the urls array.
-
+  urls.push(city)
 
 }
