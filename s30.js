@@ -9,8 +9,10 @@ const square = x => x * x
 
 const result = integers
   .map(function(integer) {
+
     return double(integer)
   })
   .map(function(integer) {
+
     return square(integer)
   })

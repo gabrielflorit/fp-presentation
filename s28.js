@@ -4,8 +4,8 @@ const integers = [1, 2, 3]
 const double = x => x + x
 const square = x => x * x
 
-// So much better. Let's rearrange things a bit.
-
+// So much better. Let's get rid of the unused doubleAndSquare function,
+// and rearrange things a bit.
 
 const result = integers
   .map(function(integer) {
