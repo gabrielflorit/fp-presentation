@@ -4,7 +4,8 @@ const integers = [1, 2, 3]
 const double = x => x + x
 const square = x => x * x
 
-// Now let's put each double/square in its own function.
+// And because we're using arrow notation,
+// we get implicit returns! Yay!
 
 const result = integers
   .map(integer =>
@@ -13,5 +14,3 @@ const result = integers
   .map(integer =>
     square(integer)
   )
-
-console.log(result)

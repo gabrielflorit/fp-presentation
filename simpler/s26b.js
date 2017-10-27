@@ -15,10 +15,3 @@ integers.forEach(function(integer) {
 })
 
 console.log(doubled)
-
-// If we call it again, we'll get different results:
-integers.forEach(function(integer) {
-  doubled.push(integer + integer)
-})
-
-console.log(doubled)

@@ -4,7 +4,7 @@ const integers = [1, 2, 3]
 const double = x => x + x
 const square = x => x * x
 
-// So clean!
+// And it works. Doesn't it look so clean?!
 
 const result = integers
   .map(double)

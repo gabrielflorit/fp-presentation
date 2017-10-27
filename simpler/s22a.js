@@ -15,3 +15,5 @@ const result = integers
 // - pure
 // - have no side-effects
 // - do not perform mutation
+
+// Let me explain - it's easier than it sounds.

@@ -5,20 +5,16 @@ const double = x => x + x
 const square = x => x * x
 
 // Alright, let's try this again. Let's double AND square the integers.
-// Ugh! for loops are so noisy! Let's do the same thing with map.
+// Let's use our new function inside the for loop.
 
 const result = []
 for (let i = 0; i < integers.length; i++) {
-  const integer = integers[i]
-  const doubled = double(integer)
-  const squared = square(doubled)
-  result.push(squared)
+  const output = doubleAndSquare(integers[i])
+  result.push(output)
 }
 
-const anotherArray = integers.map(function(integer) {
+const doubleAndSquare = function(integer) {
   const doubled = double(integer)
   const squared = square(doubled)
   return squared
-})
-
-console.log(anotherArray)
+}

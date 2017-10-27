@@ -13,12 +13,3 @@ const doubled = []
 integers.forEach(function(integer) {
   doubled.push(integer + integer) // this changes the array.
 })
-
-console.log(doubled)
-
-// If we call it again, we'll get different results:
-integers.forEach(function(integer) {
-  doubled.push(integer + integer)
-})
-
-console.log(doubled)

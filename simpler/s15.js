@@ -6,12 +6,10 @@ const square = x => x * x
 
 // So much better. Let's rearrange things a bit.
 
+
 const result = integers
   .map(function(integer) {
     const doubled = double(integer)
     const squared = square(doubled)
     return squared
   })
-
-
-console.log(result)

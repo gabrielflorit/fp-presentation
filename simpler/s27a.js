@@ -1,4 +1,5 @@
 // FP functions do not perform mutation.
+// Mutation means changing a variable's value.
 
 const integers = [1, 2, 3]
 
@@ -10,13 +11,16 @@ const squared = integers.map(function(integer) {
 // This one does.
 const doubled = []
 integers.forEach(function(integer) {
+  doubled.push(integer + integer) // this changes the array.
+})
+
+console.log(doubled)
+
+// If we call it again, we'll get different results:
+integers.forEach(function(integer) {
   doubled.push(integer + integer)
 })
 
-// Don't do that! Do this instead:
-const doubled = integers.map(function(integer) {
-  return integer + integer
-})
+console.log(doubled)
 
-// Or using the latest JS:
-const doubled = integers.map(integer => integer + integer)
+// Terrible!

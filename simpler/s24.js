@@ -1,4 +1,5 @@
-// FP functions are pure: given an input, will always return the same output.
+// FP functions are pure:
+// given an input, they will always return the same output.
 
 // This function is pure.
 const square = function(x) {
@@ -12,6 +13,8 @@ const increment = function() {
   return counter
 }
 
+// Notice how each call returns a different value! Terrible.
+console.log(increment())
 console.log(increment())
 console.log(increment())
 
