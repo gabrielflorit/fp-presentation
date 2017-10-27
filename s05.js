@@ -15,5 +15,3 @@ for (let i = 0; i < integers.length; i++) {
   result.push(doubled)
 
 }
-
-console.log(result)

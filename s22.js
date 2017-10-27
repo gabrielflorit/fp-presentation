@@ -4,14 +4,17 @@ const integers = [1, 2, 3]
 const double = x => x + x
 const square = x => x * x
 
-// And it works. Doesn't it look so clean?!
+// Actually - what would happen if only keep the bit that matters?
+// Watch:
 
-const result = integers
-  .map(double)
-  .map(square)
+const result = []
 
-// This is functional programming (FP).
-// FP involves writing functions that are:
-// - pure
-// - have no side-effects
-// - do not perform mutation
+  const output = doubleAndSquare(integers[i])
+
+
+
+const doubleAndSquare = function(integer) {
+  const doubled = double(integer)
+  const squared = square(doubled)
+  return squared
+}

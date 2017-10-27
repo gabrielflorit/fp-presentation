@@ -1,4 +1,18 @@
-// Benefits:
+// Here's an array of integers.
+const integers = [1, 2, 3]
 
-// - not mutating state means less bugs
-//   - you can expect the function to always behave the same way
+const double = x => x + x
+const square = x => x * x
+
+// Now let's put each double/square in its own map function.
+
+
+const result = integers
+  .map(function(integer) {
+    const doubled = double(integer)
+    return doubled
+  })
+  .map(function(integer) {
+    const squared = square(integer)
+    return squared
+  })

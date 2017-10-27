@@ -1,9 +1,21 @@
 // Here's an array of integers.
 const integers = [1, 2, 3]
 
-// If we are going to do lots of doubling and squaring,
-// we might as well write our own helper functions.
+// Let's double AND square them.
 
-const double = (x) => {
-  return x + x
+// Also easy!
+const result = []
+
+for (let i = 0; i < integers.length; i++) {
+
+  const integer = integers[i]
+
+  const doubled = integer + integer
+
+  const squared = doubled * doubled
+
+  result.push(squared)
+
 }
+
+console.log(result)

@@ -1,20 +1,26 @@
-// FP functions are pure:
-// given an input, they will always return the same output.
+// Here's an array of integers.
+const integers = [1, 2, 3]
 
-// This function is pure.
-const square = function(x) {
-  return x * x
+const double = x => x + x
+const square = x => x * x
+
+// When it comes to operating on arrays, for loops are the worst!
+// Is there a better, more efficient way of doing things?
+
+const result = []
+for (let i = 0; i < integers.length; i++) {
+  const output = doubleAndSquare(integers[i])
+  result.push(output)
 }
 
-// This one is not.
-let counter = 0
-const increment = function() {
-  counter = counter + 1
-  return counter
+const doubleAndSquare = function(integer) {
+  const doubled = double(integer)
+  const squared = square(doubled)
+  return squared
 }
 
-// Notice how each call returns a different value! Terrible.
-console.log(increment())
-console.log(increment())
-console.log(increment())
-
+// Yes - map:
+const myNewArray = integers.map(function(integer) {
+  const output = doubleAndSquare(integer)
+  return output
+})

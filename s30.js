@@ -1,8 +1,16 @@
-// Benefits:
+// Here's an array of integers.
+const integers = [1, 2, 3]
 
-// - not mutating state means less bugs
-//   - you can expect the function to always behave the same way
+const double = x => x + x
+const square = x => x * x
 
-// - pure functions are easy to test and easy to read
-//   - easy to test because there is no state to setup
-//   - easy to read because they only do one thing
+// And let's return the output of the double/square functions
+// directly - no need to create a temporary variable.
+
+const result = integers
+  .map(function(integer) {
+    return double(integer)
+  })
+  .map(function(integer) {
+    return square(integer)
+  })

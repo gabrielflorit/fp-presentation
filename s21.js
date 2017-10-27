@@ -4,10 +4,17 @@ const integers = [1, 2, 3]
 const double = x => x + x
 const square = x => x * x
 
-// And it works. Doesn't it look so clean?!
+// Actually - what would happen if only keep the bit that matters?
+// Watch:
 
-const result = integers
-  .map(double)
-  .map(square)
+const result = []
+for (let i = 0; i < integers.length; i++) {
+  const output = doubleAndSquare(integers[i])
+  result.push(output)
+}
 
-console.log(result)
+const doubleAndSquare = function(integer) {
+  const doubled = double(integer)
+  const squared = square(doubled)
+  return squared
+}

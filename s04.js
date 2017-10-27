@@ -4,3 +4,14 @@ const integers = [1, 2, 3]
 // Let's double them.
 
 // Easy! We'll use a for loop.
+const result = []
+
+for (let i = 0; i < integers.length; i++) {
+
+
+
+
+
+
+
+}
