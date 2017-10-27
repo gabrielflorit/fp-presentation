@@ -3,27 +3,6 @@
 
 
 
-  city = city.toLowerCase()
-  city = city.replace(' ', '-')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -39,3 +18,9 @@
 
   // replace spaces with hyphens,
   fullName = fullName.replace(' ', '-')
+
+
+
+
+
+

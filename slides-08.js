@@ -1,15 +1,6 @@
-const cities = [
-  'Sand Point',
-  'Yukon'
-]
+const cities = ['Sand Point', 'Yukon']
 
-// We want to turn them into urls, like so:
-// [
-//   'https://example.com/city/sand-point',
-//   'https://example.com/city/yukon'
-// ]
-
-let urls = []
+const urls = []
 
 // For all cities,
 for (let i = 0; i < cities.length; i++) {
@@ -31,5 +22,5 @@ for (let i = 0; i < cities.length; i++) {
 
 }
 
-// Print urls array to the console.
+// Print urls array to console.
 console.log(urls)

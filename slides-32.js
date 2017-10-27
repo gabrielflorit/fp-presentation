@@ -1,17 +1,11 @@
-const slugify = string =>
-  string
-    .replace(' ', '-')
-    .toLowerCase()
+// Let's make a toUrl function.
 
-const cities = ['Sand Point', 'Yukon']
-let urls = []
+// It will take two strings: section (e.g. city) and page (e.g. new-york)
+const toUrl = function(section, page) {
 
-for (let i = 0; i < cities.length; i++) {
-  let city = cities[i]
-  city = slugify(city)
+  // and combine them to create a url.
+  const url = 'https://example.com/' + section + '/' + page
 
-  city = 'https://example.com/city/' + city
-  urls.push(city)
+  return url
+
 }
-
-console.log(urls)

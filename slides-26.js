@@ -1,7 +1,5 @@
-const slugify = string => {
-
+const slugify = (string) => {
   return string
     .toLowerCase()
     .replace(' ', '-')
-
 }
