@@ -1,4 +1,4 @@
-// Pure functions: given an input, will always return the same output.
+// FP functions are pure: given an input, will always return the same output.
 
 // This function is pure.
 const square = function(x) {

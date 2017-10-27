@@ -17,3 +17,6 @@ integers.forEach(function(integer) {
 const doubled = integers.map(function(integer) {
   return integer + integer
 })
+
+// Or using the latest JS:
+const doubled = integers.map(integer => integer + integer)
