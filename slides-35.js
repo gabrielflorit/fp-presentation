@@ -1,4 +1,3 @@
-const toUrl = (section, page) => {
-  const url = 'https://example.com/' + section + '/' + page
-  return url
+const toUrl = function(section, page) {
+  return 'https://example.com/' + section + '/' + page
 }

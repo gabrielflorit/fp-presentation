@@ -5,7 +5,7 @@ const slugify = string =>
   string.toLowerCase().replace(' ', '-')
 
 const cities = ['Sand Point', 'Yukon']
-let urls = []
+const urls = []
 
 for (let i = 0; i < cities.length; i++) {
   let city = cities[i]

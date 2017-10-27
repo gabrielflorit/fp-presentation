@@ -16,10 +16,10 @@ people.forEach(function(person) {
   fullName = toUrl('person', fullName)
   urls.push(fullName)
 })
+
+urls = people.map(function(person) {
   let fullName = person.firstName + ' ' + person.lastName
   fullName = slugify(fullName)
   fullName = toUrl('person', fullName)
-  urls.push(fullName)
+  return fullName
 })
-
-

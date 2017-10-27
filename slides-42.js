@@ -4,25 +4,11 @@ const toUrl = (section, page) =>
 const slugify = string =>
   string.toLowerCase().replace(' ', '-')
 
-const cities = ['Sand Point', 'Yukon']
-let urls = []
-
-for (let i = 0; i < cities.length; i++) {
-  let city = cities[i]
-  city = slugify(city)
-  city = toUrl('city', city)
-  urls.push(city)
-}
-
-console.log(urls)
-
-//---------------------------------------------//
-
 const people = [
   { firstName: 'Jane', lastName: 'Doe' },
   { firstName: 'John', lastName: 'James' }
 ]
-urls = []
+const urls = []
 
 for (let j = 0; j < people.length; j++) {
   const person = people[j]

@@ -2,7 +2,7 @@ const people = [
   { firstName: 'Jane', lastName: 'Doe' },
   { firstName: 'John', lastName: 'James' }
 ]
-let urls = []
+const urls = []
 
 // For all people,
 for (let j = 0; j < people.length; j++) {

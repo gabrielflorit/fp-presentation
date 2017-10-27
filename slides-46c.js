@@ -7,9 +7,9 @@
 
 
 
-
-
-
+for (let j = 0; j < people.length; j++) {
+  const person = people[j]
+  let fullName = person.firstName + ' ' + person.lastName
 for (let j = 0; j < people.length; j++) {
   const person = people[j]
   let fullName = person.firstName + ' ' + person.lastName
